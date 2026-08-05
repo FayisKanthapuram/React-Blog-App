@@ -6,6 +6,7 @@ import BlogList from "./pages/BlogList";
 import BlogForm from "./pages/BlogForm";
 import ProtectedRoute from "./routes/ProtectedRoute";
 import BlogDetails from "./pages/BlogDetails";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -34,6 +35,8 @@ function App() {
           }
         />
       </Route>
+
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
